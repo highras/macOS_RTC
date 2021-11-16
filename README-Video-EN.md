@@ -17,6 +17,7 @@ iOS RTM Real time video Usage document (integration + interface description)
 <a id="integrationdependency">integration dependency</a>
 ================
 * import SDK and #import <Rtm/Rtm.h>
+* import default.metallib
 * import folder RTMAudioManager
 * TARGETS->Build Settings->Other Linker Flags add "-ObjC"
 * SDK use Objective-C++，need to add .mm file (any one .m file to .mm)
