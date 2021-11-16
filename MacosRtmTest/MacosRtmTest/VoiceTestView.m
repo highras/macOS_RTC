@@ -40,7 +40,7 @@
        
     [self _login];
     
-    NSButton * initVoiceEngine = [NSButton buttonWithTitle:@"1.初始化" target:self action:@selector(initVoiceEngine)];
+    NSButton * initVoiceEngine = [NSButton buttonWithTitle:@"1.初始化(等待提示登陆成功后)点击" target:self action:@selector(initVoiceEngine)];
     initVoiceEngine.frame = CGRectMake(250, 500, 150, 150);
     [self addSubview:initVoiceEngine];
     

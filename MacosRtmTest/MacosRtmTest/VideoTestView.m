@@ -40,7 +40,7 @@
        
     [self _login];
             
-    NSButton * initVideoEngine = [NSButton buttonWithTitle:@"1.初始化" target:self action:@selector(initVideoEngine)];
+    NSButton * initVideoEngine = [NSButton buttonWithTitle:@"1.初始化(等待提示登陆成功后)点击" target:self action:@selector(initVideoEngine)];
     initVideoEngine.frame = CGRectMake(250, 600, 150, 150);
     [self addSubview:initVideoEngine];
     
