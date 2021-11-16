@@ -1,0 +1,850 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		56160B1F274235AF0005150E /* VideoTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56160B1D274235AF0005150E /* VideoTestView.m */; };
+		56160B3B2742600B0005150E /* VoiceTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56160B392742600B0005150E /* VoiceTestView.m */; };
+		56160BAA274386CB0005150E /* default.metallib in Resources */ = {isa = PBXBuildFile; fileRef = 56160BA9274386CB0005150E /* default.metallib */; };
+		56160BB727438A260005150E /* Rtm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56160BB627438A260005150E /* Rtm.framework */; };
+		56160BC127438CF10005150E /* libresolv.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5665C4EE2716BE9E002D6B46 /* libresolv.9.tbd */; };
+		5644B9F5272BAA39001E3E7A /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5644B9DD272BAA39001E3E7A /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		5644B9F6272BAA39001E3E7A /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5644B9E6272BAA39001E3E7A /* ViewController+MASAdditions.m */; };
+		5644B9F7272BAA39001E3E7A /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 5644B9EA272BAA39001E3E7A /* MASCompositeConstraint.m */; };
+		5644B9F8272BAA39001E3E7A /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 5644B9EB272BAA39001E3E7A /* MASConstraintMaker.m */; };
+		5644B9F9272BAA39001E3E7A /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 5644B9EC272BAA39001E3E7A /* MASLayoutConstraint.m */; };
+		5644B9FA272BAA39001E3E7A /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5644B9ED272BAA39001E3E7A /* NSArray+MASAdditions.m */; };
+		5644B9FB272BAA39001E3E7A /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5644B9EE272BAA39001E3E7A /* View+MASAdditions.m */; };
+		5644B9FC272BAA39001E3E7A /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 5644B9F1272BAA39001E3E7A /* MASConstraint.m */; };
+		5644B9FD272BAA39001E3E7A /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 5644B9F3272BAA39001E3E7A /* MASViewConstraint.m */; };
+		5644B9FE272BAA39001E3E7A /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 5644B9F4272BAA39001E3E7A /* MASViewAttribute.m */; };
+		5665BBB02713EB98002D6B46 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5665BBAF2713EB98002D6B46 /* AppDelegate.m */; };
+		5665BBB32713EB98002D6B46 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5665BBB22713EB98002D6B46 /* ViewController.mm */; };
+		5665BBB52713EB98002D6B46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5665BBB42713EB98002D6B46 /* Assets.xcassets */; };
+		5665BBB82713EB98002D6B46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5665BBB62713EB98002D6B46 /* Main.storyboard */; };
+		5665BBBB2713EB98002D6B46 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5665BBBA2713EB98002D6B46 /* main.m */; };
+		5665BBC62713EB99002D6B46 /* MacosRtmTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5665BBC52713EB99002D6B46 /* MacosRtmTestTests.m */; };
+		5665BBD12713EB99002D6B46 /* MacosRtmTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5665BBD02713EB99002D6B46 /* MacosRtmTestUITests.m */; };
+		56778F50273CF6C900A8DD70 /* vo-amrwbenc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 56778F4D273CF6C800A8DD70 /* vo-amrwbenc.a */; };
+		56778F51273CF6C900A8DD70 /* opencore-amrnb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 56778F4E273CF6C900A8DD70 /* opencore-amrnb.a */; };
+		56778F52273CF6C900A8DD70 /* opencore-amrwb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 56778F4F273CF6C900A8DD70 /* opencore-amrwb.a */; };
+		56DCC284271D707200B55E1F /* wavwriter.c in Sources */ = {isa = PBXBuildFile; fileRef = 56DCC26E271D707200B55E1F /* wavwriter.c */; };
+		56DCC285271D707200B55E1F /* VoiceConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 56DCC272271D707200B55E1F /* VoiceConverter.mm */; };
+		56DCC286271D707200B55E1F /* wavreader.c in Sources */ = {isa = PBXBuildFile; fileRef = 56DCC275271D707200B55E1F /* wavreader.c */; };
+		56DCC287271D707200B55E1F /* NarrowBandWavToAmr.mm in Sources */ = {isa = PBXBuildFile; fileRef = 56DCC276271D707200B55E1F /* NarrowBandWavToAmr.mm */; };
+		56DCC288271D707200B55E1F /* WidthBandWavToAmr.mm in Sources */ = {isa = PBXBuildFile; fileRef = 56DCC277271D707200B55E1F /* WidthBandWavToAmr.mm */; };
+		56DCC289271D707200B55E1F /* RTMRecordManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DCC27A271D707200B55E1F /* RTMRecordManager.m */; };
+		56DCC28D271D707200B55E1F /* RTMAudioplayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DCC27F271D707200B55E1F /* RTMAudioplayer.m */; };
+		56DCC28E271D707200B55E1F /* RtmVoiceConverterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DCC283271D707200B55E1F /* RtmVoiceConverterManager.m */; };
+		56DCC2A0271E735C00B55E1F /* 16 16 1.amr in Resources */ = {isa = PBXBuildFile; fileRef = 56DCC29E271E735C00B55E1F /* 16 16 1.amr */; };
+		56DCC2A1271E735C00B55E1F /* 16HZ 16BIT 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 56DCC29F271E735C00B55E1F /* 16HZ 16BIT 1.wav */; };
+		56DCC2A7271E797C00B55E1F /* TT.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DCC2A6271E797C00B55E1F /* TT.m */; };
+		56DCC2B5271E9B2500B55E1F /* 16 16 1 wav.wav in Resources */ = {isa = PBXBuildFile; fileRef = 56DCC2B4271E9B2500B55E1F /* 16 16 1 wav.wav */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5665BBC22713EB99002D6B46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5665BBA32713EB98002D6B46 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5665BBAA2713EB98002D6B46;
+			remoteInfo = MacosRtmTest;
+		};
+		5665BBCD2713EB99002D6B46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5665BBA32713EB98002D6B46 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5665BBAA2713EB98002D6B46;
+			remoteInfo = MacosRtmTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		56160B1C274235AF0005150E /* VideoTestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoTestView.h; sourceTree = "<group>"; };
+		56160B1D274235AF0005150E /* VideoTestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoTestView.m; sourceTree = "<group>"; };
+		56160B2727425D290005150E /* VoiceTestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VoiceTestView.h; sourceTree = "<group>"; };
+		56160B392742600B0005150E /* VoiceTestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VoiceTestView.m; sourceTree = "<group>"; };
+		56160BA9274386CB0005150E /* default.metallib */ = {isa = PBXFileReference; lastKnownFileType = "archive.metal-library"; path = default.metallib; sourceTree = "<group>"; };
+		56160BB627438A260005150E /* Rtm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Rtm.framework; sourceTree = "<group>"; };
+		5644B9DC272BAA39001E3E7A /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		5644B9DD272BAA39001E3E7A /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		5644B9DE272BAA39001E3E7A /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		5644B9DF272BAA39001E3E7A /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		5644B9E0272BAA39001E3E7A /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		5644B9E1272BAA39001E3E7A /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		5644B9E2272BAA39001E3E7A /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		5644B9E3272BAA39001E3E7A /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		5644B9E4272BAA39001E3E7A /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		5644B9E5272BAA39001E3E7A /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		5644B9E6272BAA39001E3E7A /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		5644B9E7272BAA39001E3E7A /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		5644B9E8272BAA39001E3E7A /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		5644B9E9272BAA39001E3E7A /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		5644B9EA272BAA39001E3E7A /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		5644B9EB272BAA39001E3E7A /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		5644B9EC272BAA39001E3E7A /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		5644B9ED272BAA39001E3E7A /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		5644B9EE272BAA39001E3E7A /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		5644B9EF272BAA39001E3E7A /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		5644B9F0272BAA39001E3E7A /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		5644B9F1272BAA39001E3E7A /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		5644B9F2272BAA39001E3E7A /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		5644B9F3272BAA39001E3E7A /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		5644B9F4272BAA39001E3E7A /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		5665BBAB2713EB98002D6B46 /* MacosRtmTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacosRtmTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5665BBAE2713EB98002D6B46 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5665BBAF2713EB98002D6B46 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5665BBB12713EB98002D6B46 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5665BBB22713EB98002D6B46 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		5665BBB42713EB98002D6B46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5665BBB72713EB98002D6B46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5665BBB92713EB98002D6B46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5665BBBA2713EB98002D6B46 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5665BBBC2713EB98002D6B46 /* MacosRtmTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacosRtmTest.entitlements; sourceTree = "<group>"; };
+		5665BBC12713EB99002D6B46 /* MacosRtmTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacosRtmTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5665BBC52713EB99002D6B46 /* MacosRtmTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MacosRtmTestTests.m; sourceTree = "<group>"; };
+		5665BBC72713EB99002D6B46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5665BBCC2713EB99002D6B46 /* MacosRtmTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacosRtmTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5665BBD02713EB99002D6B46 /* MacosRtmTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MacosRtmTestUITests.m; sourceTree = "<group>"; };
+		5665BBD22713EB99002D6B46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5665C4EE2716BE9E002D6B46 /* libresolv.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.9.tbd; path = usr/lib/libresolv.9.tbd; sourceTree = SDKROOT; };
+		56778F4D273CF6C800A8DD70 /* vo-amrwbenc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "vo-amrwbenc.a"; sourceTree = "<group>"; };
+		56778F4E273CF6C900A8DD70 /* opencore-amrnb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "opencore-amrnb.a"; sourceTree = "<group>"; };
+		56778F4F273CF6C900A8DD70 /* opencore-amrwb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "opencore-amrwb.a"; sourceTree = "<group>"; };
+		56DCC268271D707200B55E1F /* if_rom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_rom.h; sourceTree = "<group>"; };
+		56DCC269271D707200B55E1F /* dec_if.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dec_if.h; sourceTree = "<group>"; };
+		56DCC26A271D707200B55E1F /* RTMAudioplayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTMAudioplayer.h; sourceTree = "<group>"; };
+		56DCC26C271D707200B55E1F /* enc_if.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = enc_if.h; sourceTree = "<group>"; };
+		56DCC26E271D707200B55E1F /* wavwriter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wavwriter.c; sourceTree = "<group>"; };
+		56DCC26F271D707200B55E1F /* wavreader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wavreader.h; sourceTree = "<group>"; };
+		56DCC270271D707200B55E1F /* NarrowBandWavToAmr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NarrowBandWavToAmr.h; sourceTree = "<group>"; };
+		56DCC271271D707200B55E1F /* WidthBandWavToAmr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WidthBandWavToAmr.h; sourceTree = "<group>"; };
+		56DCC272271D707200B55E1F /* VoiceConverter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VoiceConverter.mm; sourceTree = "<group>"; };
+		56DCC273271D707200B55E1F /* wavwriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wavwriter.h; sourceTree = "<group>"; };
+		56DCC274271D707200B55E1F /* VoiceConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceConverter.h; sourceTree = "<group>"; };
+		56DCC275271D707200B55E1F /* wavreader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wavreader.c; sourceTree = "<group>"; };
+		56DCC276271D707200B55E1F /* NarrowBandWavToAmr.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NarrowBandWavToAmr.mm; sourceTree = "<group>"; };
+		56DCC277271D707200B55E1F /* WidthBandWavToAmr.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WidthBandWavToAmr.mm; sourceTree = "<group>"; };
+		56DCC278271D707200B55E1F /* RTMRecordManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTMRecordManager.h; sourceTree = "<group>"; };
+		56DCC279271D707200B55E1F /* RtmVoiceConverterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RtmVoiceConverterManager.h; sourceTree = "<group>"; };
+		56DCC27A271D707200B55E1F /* RTMRecordManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTMRecordManager.m; sourceTree = "<group>"; };
+		56DCC27F271D707200B55E1F /* RTMAudioplayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTMAudioplayer.m; sourceTree = "<group>"; };
+		56DCC281271D707200B55E1F /* interf_dec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_dec.h; sourceTree = "<group>"; };
+		56DCC282271D707200B55E1F /* interf_enc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_enc.h; sourceTree = "<group>"; };
+		56DCC283271D707200B55E1F /* RtmVoiceConverterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RtmVoiceConverterManager.m; sourceTree = "<group>"; };
+		56DCC29E271E735C00B55E1F /* 16 16 1.amr */ = {isa = PBXFileReference; lastKnownFileType = file; path = "16 16 1.amr"; sourceTree = "<group>"; };
+		56DCC29F271E735C00B55E1F /* 16HZ 16BIT 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "16HZ 16BIT 1.wav"; sourceTree = "<group>"; };
+		56DCC2A5271E797C00B55E1F /* TT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TT.h; sourceTree = "<group>"; };
+		56DCC2A6271E797C00B55E1F /* TT.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TT.m; sourceTree = "<group>"; };
+		56DCC2B4271E9B2500B55E1F /* 16 16 1 wav.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "16 16 1 wav.wav"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5665BBA82713EB98002D6B46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56778F52273CF6C900A8DD70 /* opencore-amrwb.a in Frameworks */,
+				56778F50273CF6C900A8DD70 /* vo-amrwbenc.a in Frameworks */,
+				56160BC127438CF10005150E /* libresolv.9.tbd in Frameworks */,
+				56160BB727438A260005150E /* Rtm.framework in Frameworks */,
+				56778F51273CF6C900A8DD70 /* opencore-amrnb.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5665BBBE2713EB99002D6B46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5665BBC92713EB99002D6B46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5644B9DB272BAA39001E3E7A /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				5644B9DC272BAA39001E3E7A /* MASCompositeConstraint.h */,
+				5644B9DD272BAA39001E3E7A /* NSLayoutConstraint+MASDebugAdditions.m */,
+				5644B9DE272BAA39001E3E7A /* MASConstraint+Private.h */,
+				5644B9DF272BAA39001E3E7A /* MASLayoutConstraint.h */,
+				5644B9E0272BAA39001E3E7A /* NSArray+MASShorthandAdditions.h */,
+				5644B9E1272BAA39001E3E7A /* MASConstraintMaker.h */,
+				5644B9E2272BAA39001E3E7A /* View+MASAdditions.h */,
+				5644B9E3272BAA39001E3E7A /* NSArray+MASAdditions.h */,
+				5644B9E4272BAA39001E3E7A /* MASUtilities.h */,
+				5644B9E5272BAA39001E3E7A /* MASViewAttribute.h */,
+				5644B9E6272BAA39001E3E7A /* ViewController+MASAdditions.m */,
+				5644B9E7272BAA39001E3E7A /* MASViewConstraint.h */,
+				5644B9E8272BAA39001E3E7A /* MASConstraint.h */,
+				5644B9E9272BAA39001E3E7A /* NSLayoutConstraint+MASDebugAdditions.h */,
+				5644B9EA272BAA39001E3E7A /* MASCompositeConstraint.m */,
+				5644B9EB272BAA39001E3E7A /* MASConstraintMaker.m */,
+				5644B9EC272BAA39001E3E7A /* MASLayoutConstraint.m */,
+				5644B9ED272BAA39001E3E7A /* NSArray+MASAdditions.m */,
+				5644B9EE272BAA39001E3E7A /* View+MASAdditions.m */,
+				5644B9EF272BAA39001E3E7A /* View+MASShorthandAdditions.h */,
+				5644B9F0272BAA39001E3E7A /* Masonry.h */,
+				5644B9F1272BAA39001E3E7A /* MASConstraint.m */,
+				5644B9F2272BAA39001E3E7A /* ViewController+MASAdditions.h */,
+				5644B9F3272BAA39001E3E7A /* MASViewConstraint.m */,
+				5644B9F4272BAA39001E3E7A /* MASViewAttribute.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		5665BBA22713EB98002D6B46 = {
+			isa = PBXGroup;
+			children = (
+				56160BA9274386CB0005150E /* default.metallib */,
+				56160BB627438A260005150E /* Rtm.framework */,
+				5644B9DB272BAA39001E3E7A /* Masonry */,
+				56DCC266271D707200B55E1F /* RTMAudioManager */,
+				5665BBAD2713EB98002D6B46 /* MacosRtmTest */,
+				5665BBC42713EB99002D6B46 /* MacosRtmTestTests */,
+				5665BBCF2713EB99002D6B46 /* MacosRtmTestUITests */,
+				5665BBAC2713EB98002D6B46 /* Products */,
+				5665C4ED2716BE9E002D6B46 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5665BBAC2713EB98002D6B46 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5665BBAB2713EB98002D6B46 /* MacosRtmTest.app */,
+				5665BBC12713EB99002D6B46 /* MacosRtmTestTests.xctest */,
+				5665BBCC2713EB99002D6B46 /* MacosRtmTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5665BBAD2713EB98002D6B46 /* MacosRtmTest */ = {
+			isa = PBXGroup;
+			children = (
+				56DCC2B4271E9B2500B55E1F /* 16 16 1 wav.wav */,
+				56DCC29E271E735C00B55E1F /* 16 16 1.amr */,
+				56DCC29F271E735C00B55E1F /* 16HZ 16BIT 1.wav */,
+				5665BBAE2713EB98002D6B46 /* AppDelegate.h */,
+				5665BBAF2713EB98002D6B46 /* AppDelegate.m */,
+				5665BBB12713EB98002D6B46 /* ViewController.h */,
+				5665BBB22713EB98002D6B46 /* ViewController.mm */,
+				56160B2727425D290005150E /* VoiceTestView.h */,
+				56160B392742600B0005150E /* VoiceTestView.m */,
+				56160B1C274235AF0005150E /* VideoTestView.h */,
+				56160B1D274235AF0005150E /* VideoTestView.m */,
+				56DCC2A5271E797C00B55E1F /* TT.h */,
+				56DCC2A6271E797C00B55E1F /* TT.m */,
+				5665BBB42713EB98002D6B46 /* Assets.xcassets */,
+				5665BBB62713EB98002D6B46 /* Main.storyboard */,
+				5665BBB92713EB98002D6B46 /* Info.plist */,
+				5665BBBA2713EB98002D6B46 /* main.m */,
+				5665BBBC2713EB98002D6B46 /* MacosRtmTest.entitlements */,
+			);
+			path = MacosRtmTest;
+			sourceTree = "<group>";
+		};
+		5665BBC42713EB99002D6B46 /* MacosRtmTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				5665BBC52713EB99002D6B46 /* MacosRtmTestTests.m */,
+				5665BBC72713EB99002D6B46 /* Info.plist */,
+			);
+			path = MacosRtmTestTests;
+			sourceTree = "<group>";
+		};
+		5665BBCF2713EB99002D6B46 /* MacosRtmTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5665BBD02713EB99002D6B46 /* MacosRtmTestUITests.m */,
+				5665BBD22713EB99002D6B46 /* Info.plist */,
+			);
+			path = MacosRtmTestUITests;
+			sourceTree = "<group>";
+		};
+		5665C4ED2716BE9E002D6B46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5665C4EE2716BE9E002D6B46 /* libresolv.9.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		56DCC266271D707200B55E1F /* RTMAudioManager */ = {
+			isa = PBXGroup;
+			children = (
+				56DCC267271D707200B55E1F /* opencore-amrwb */,
+				56DCC26B271D707200B55E1F /* vo-amrwbenc */,
+				56DCC26D271D707200B55E1F /* amrTools */,
+				56DCC26A271D707200B55E1F /* RTMAudioplayer.h */,
+				56DCC27F271D707200B55E1F /* RTMAudioplayer.m */,
+				56DCC278271D707200B55E1F /* RTMRecordManager.h */,
+				56DCC27A271D707200B55E1F /* RTMRecordManager.m */,
+				56DCC279271D707200B55E1F /* RtmVoiceConverterManager.h */,
+				56DCC283271D707200B55E1F /* RtmVoiceConverterManager.m */,
+				56DCC27B271D707200B55E1F /* lib */,
+				56DCC280271D707200B55E1F /* opencore-amrnb */,
+			);
+			path = RTMAudioManager;
+			sourceTree = "<group>";
+		};
+		56DCC267271D707200B55E1F /* opencore-amrwb */ = {
+			isa = PBXGroup;
+			children = (
+				56DCC268271D707200B55E1F /* if_rom.h */,
+				56DCC269271D707200B55E1F /* dec_if.h */,
+			);
+			path = "opencore-amrwb";
+			sourceTree = "<group>";
+		};
+		56DCC26B271D707200B55E1F /* vo-amrwbenc */ = {
+			isa = PBXGroup;
+			children = (
+				56DCC26C271D707200B55E1F /* enc_if.h */,
+			);
+			path = "vo-amrwbenc";
+			sourceTree = "<group>";
+		};
+		56DCC26D271D707200B55E1F /* amrTools */ = {
+			isa = PBXGroup;
+			children = (
+				56DCC26E271D707200B55E1F /* wavwriter.c */,
+				56DCC26F271D707200B55E1F /* wavreader.h */,
+				56DCC270271D707200B55E1F /* NarrowBandWavToAmr.h */,
+				56DCC271271D707200B55E1F /* WidthBandWavToAmr.h */,
+				56DCC272271D707200B55E1F /* VoiceConverter.mm */,
+				56DCC273271D707200B55E1F /* wavwriter.h */,
+				56DCC274271D707200B55E1F /* VoiceConverter.h */,
+				56DCC275271D707200B55E1F /* wavreader.c */,
+				56DCC276271D707200B55E1F /* NarrowBandWavToAmr.mm */,
+				56DCC277271D707200B55E1F /* WidthBandWavToAmr.mm */,
+			);
+			path = amrTools;
+			sourceTree = "<group>";
+		};
+		56DCC27B271D707200B55E1F /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				56778F4E273CF6C900A8DD70 /* opencore-amrnb.a */,
+				56778F4F273CF6C900A8DD70 /* opencore-amrwb.a */,
+				56778F4D273CF6C800A8DD70 /* vo-amrwbenc.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		56DCC280271D707200B55E1F /* opencore-amrnb */ = {
+			isa = PBXGroup;
+			children = (
+				56DCC281271D707200B55E1F /* interf_dec.h */,
+				56DCC282271D707200B55E1F /* interf_enc.h */,
+			);
+			path = "opencore-amrnb";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5665BBAA2713EB98002D6B46 /* MacosRtmTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5665BBD52713EB99002D6B46 /* Build configuration list for PBXNativeTarget "MacosRtmTest" */;
+			buildPhases = (
+				5665BBA72713EB98002D6B46 /* Sources */,
+				5665BBA82713EB98002D6B46 /* Frameworks */,
+				5665BBA92713EB98002D6B46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MacosRtmTest;
+			productName = MacosRtmTest;
+			productReference = 5665BBAB2713EB98002D6B46 /* MacosRtmTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5665BBC02713EB99002D6B46 /* MacosRtmTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5665BBD82713EB99002D6B46 /* Build configuration list for PBXNativeTarget "MacosRtmTestTests" */;
+			buildPhases = (
+				5665BBBD2713EB99002D6B46 /* Sources */,
+				5665BBBE2713EB99002D6B46 /* Frameworks */,
+				5665BBBF2713EB99002D6B46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5665BBC32713EB99002D6B46 /* PBXTargetDependency */,
+			);
+			name = MacosRtmTestTests;
+			productName = MacosRtmTestTests;
+			productReference = 5665BBC12713EB99002D6B46 /* MacosRtmTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5665BBCB2713EB99002D6B46 /* MacosRtmTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5665BBDB2713EB99002D6B46 /* Build configuration list for PBXNativeTarget "MacosRtmTestUITests" */;
+			buildPhases = (
+				5665BBC82713EB99002D6B46 /* Sources */,
+				5665BBC92713EB99002D6B46 /* Frameworks */,
+				5665BBCA2713EB99002D6B46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5665BBCE2713EB99002D6B46 /* PBXTargetDependency */,
+			);
+			name = MacosRtmTestUITests;
+			productName = MacosRtmTestUITests;
+			productReference = 5665BBCC2713EB99002D6B46 /* MacosRtmTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5665BBA32713EB98002D6B46 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					5665BBAA2713EB98002D6B46 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					5665BBC02713EB99002D6B46 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 5665BBAA2713EB98002D6B46;
+					};
+					5665BBCB2713EB99002D6B46 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 5665BBAA2713EB98002D6B46;
+					};
+				};
+			};
+			buildConfigurationList = 5665BBA62713EB98002D6B46 /* Build configuration list for PBXProject "MacosRtmTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5665BBA22713EB98002D6B46;
+			productRefGroup = 5665BBAC2713EB98002D6B46 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5665BBAA2713EB98002D6B46 /* MacosRtmTest */,
+				5665BBC02713EB99002D6B46 /* MacosRtmTestTests */,
+				5665BBCB2713EB99002D6B46 /* MacosRtmTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5665BBA92713EB98002D6B46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56DCC2A1271E735C00B55E1F /* 16HZ 16BIT 1.wav in Resources */,
+				56DCC2A0271E735C00B55E1F /* 16 16 1.amr in Resources */,
+				5665BBB52713EB98002D6B46 /* Assets.xcassets in Resources */,
+				56160BAA274386CB0005150E /* default.metallib in Resources */,
+				5665BBB82713EB98002D6B46 /* Main.storyboard in Resources */,
+				56DCC2B5271E9B2500B55E1F /* 16 16 1 wav.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5665BBBF2713EB99002D6B46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5665BBCA2713EB99002D6B46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5665BBA72713EB98002D6B46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5644B9FB272BAA39001E3E7A /* View+MASAdditions.m in Sources */,
+				5644B9FE272BAA39001E3E7A /* MASViewAttribute.m in Sources */,
+				5644B9F5272BAA39001E3E7A /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				56160B3B2742600B0005150E /* VoiceTestView.m in Sources */,
+				56DCC285271D707200B55E1F /* VoiceConverter.mm in Sources */,
+				5665BBB32713EB98002D6B46 /* ViewController.mm in Sources */,
+				5644B9FC272BAA39001E3E7A /* MASConstraint.m in Sources */,
+				56DCC288271D707200B55E1F /* WidthBandWavToAmr.mm in Sources */,
+				5644B9F7272BAA39001E3E7A /* MASCompositeConstraint.m in Sources */,
+				5644B9F8272BAA39001E3E7A /* MASConstraintMaker.m in Sources */,
+				5644B9F6272BAA39001E3E7A /* ViewController+MASAdditions.m in Sources */,
+				56DCC2A7271E797C00B55E1F /* TT.m in Sources */,
+				56160B1F274235AF0005150E /* VideoTestView.m in Sources */,
+				56DCC28D271D707200B55E1F /* RTMAudioplayer.m in Sources */,
+				5665BBBB2713EB98002D6B46 /* main.m in Sources */,
+				56DCC287271D707200B55E1F /* NarrowBandWavToAmr.mm in Sources */,
+				5644B9F9272BAA39001E3E7A /* MASLayoutConstraint.m in Sources */,
+				56DCC286271D707200B55E1F /* wavreader.c in Sources */,
+				5665BBB02713EB98002D6B46 /* AppDelegate.m in Sources */,
+				5644B9FA272BAA39001E3E7A /* NSArray+MASAdditions.m in Sources */,
+				56DCC289271D707200B55E1F /* RTMRecordManager.m in Sources */,
+				5644B9FD272BAA39001E3E7A /* MASViewConstraint.m in Sources */,
+				56DCC28E271D707200B55E1F /* RtmVoiceConverterManager.m in Sources */,
+				56DCC284271D707200B55E1F /* wavwriter.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5665BBBD2713EB99002D6B46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5665BBC62713EB99002D6B46 /* MacosRtmTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5665BBC82713EB99002D6B46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5665BBD12713EB99002D6B46 /* MacosRtmTestUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5665BBC32713EB99002D6B46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5665BBAA2713EB98002D6B46 /* MacosRtmTest */;
+			targetProxy = 5665BBC22713EB99002D6B46 /* PBXContainerItemProxy */;
+		};
+		5665BBCE2713EB99002D6B46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5665BBAA2713EB98002D6B46 /* MacosRtmTest */;
+			targetProxy = 5665BBCD2713EB99002D6B46 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5665BBB62713EB98002D6B46 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5665BBB72713EB98002D6B46 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5665BBD32713EB99002D6B46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5665BBD42713EB99002D6B46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5665BBD62713EB99002D6B46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				CODE_SIGN_ENTITLEMENTS = MacosRtmTest/MacosRtmTest.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 85Q2285229;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = MacosRtmTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RTMAudioManager/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ys.MacosRtmTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5665BBD72713EB99002D6B46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				CODE_SIGN_ENTITLEMENTS = MacosRtmTest/MacosRtmTest.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 85Q2285229;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = MacosRtmTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RTMAudioManager/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ys.MacosRtmTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5665BBD92713EB99002D6B46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 85Q2285229;
+				INFOPLIST_FILE = MacosRtmTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ys.MacosRtmTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MacosRtmTest.app/Contents/MacOS/MacosRtmTest";
+			};
+			name = Debug;
+		};
+		5665BBDA2713EB99002D6B46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 85Q2285229;
+				INFOPLIST_FILE = MacosRtmTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ys.MacosRtmTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MacosRtmTest.app/Contents/MacOS/MacosRtmTest";
+			};
+			name = Release;
+		};
+		5665BBDC2713EB99002D6B46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 85Q2285229;
+				INFOPLIST_FILE = MacosRtmTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ys.MacosRtmTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MacosRtmTest;
+			};
+			name = Debug;
+		};
+		5665BBDD2713EB99002D6B46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 85Q2285229;
+				INFOPLIST_FILE = MacosRtmTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ys.MacosRtmTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MacosRtmTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5665BBA62713EB98002D6B46 /* Build configuration list for PBXProject "MacosRtmTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5665BBD32713EB99002D6B46 /* Debug */,
+				5665BBD42713EB99002D6B46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5665BBD52713EB99002D6B46 /* Build configuration list for PBXNativeTarget "MacosRtmTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5665BBD62713EB99002D6B46 /* Debug */,
+				5665BBD72713EB99002D6B46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5665BBD82713EB99002D6B46 /* Build configuration list for PBXNativeTarget "MacosRtmTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5665BBD92713EB99002D6B46 /* Debug */,
+				5665BBDA2713EB99002D6B46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5665BBDB2713EB99002D6B46 /* Build configuration list for PBXNativeTarget "MacosRtmTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5665BBDC2713EB99002D6B46 /* Debug */,
+				5665BBDD2713EB99002D6B46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5665BBA32713EB98002D6B46 /* Project object */;
+}
