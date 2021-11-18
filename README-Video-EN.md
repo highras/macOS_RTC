@@ -10,7 +10,7 @@ iOS RTM Real time video Usage document (integration + interface description)
 <a id="versionsupport">version support</a>
 ================
 * language:Objective-C  
-* minimum system iOS 9 
+* minimum system macOS 10.12 
 
 
 
