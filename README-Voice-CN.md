@@ -71,8 +71,7 @@ self.client = [RTMClient clientWithEndpoint:
                                   projectId:
                                      userId:
                                    delegate:
-                                     config:
-                                 autoRelogin:];
+                                     config: ];
 self.client.voiceDelegate = self;
 self.rtcEndpoint = @"";
 
@@ -85,8 +84,6 @@ self.rtcEndpoint = @"";
                 connectFail:nil];
                     
      
-//3.登录成功后 语音初始化
-[self.client setAudioEngineWithDualChannel:NO];
          
          
 //4.加入语音房间
