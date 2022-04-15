@@ -125,8 +125,7 @@ self.client = [RTMClient clientWithEndpoint:
                                   projectId:
                                      userId:
                                    delegate:
-                                     config:
-                                 autoRelogin:];
+                                     config:];
 //login
  if (self.client) {
  
