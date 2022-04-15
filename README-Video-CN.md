@@ -70,8 +70,7 @@ self.client = [RTMClient clientWithEndpoint:
                                   projectId:
                                      userId:
                                    delegate:
-                                     config:
-                                 autoRelogin:];
+                                     config:];
 self.client.videoDelegate = self;
 self.rtcEndpoint = @"";
 
@@ -83,13 +82,11 @@ self.rtcEndpoint = @"";
                     success:nil 
                 connectFail:nil];
                     
-     
-//3.登录成功后 视频初始化
-[self.client setVideoEngine];
          
          
-//4.加入视频房间
+//3.加入视频房间
 [self.client enterVideoRoomWithRoomId:@(0)
+                    captureVideoLevel:RTMCaptureVideoDefault
                               timeout:10
                               success:^(RTMVideoEnterRoomAnswer * answer) {
 
