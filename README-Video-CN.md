@@ -94,12 +94,12 @@ self.rtcEndpoint = @"";
         
 } fail:nil];
 
-//5.打开摄像头 获取镜像View
+//4.打开摄像头 获取镜像View
 [self.client openCamera];
 [self.view addSubview:self.client.mySelfPreview];
 
 
-//6.订阅用户
+//5.订阅用户
 [self.client subscribeVideoWithRoomId:
                                   uid:
                        containerViews:
