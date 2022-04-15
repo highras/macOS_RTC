@@ -86,7 +86,7 @@ self.rtcEndpoint = @"";
      
          
          
-//4.加入语音房间
+//3.加入语音房间
 [self.client enterVoiceRoomWithRoomId:@(0)
                               timeout:10
                               success:^(RTMVoiceEnterRoomAnswer * answer) {
