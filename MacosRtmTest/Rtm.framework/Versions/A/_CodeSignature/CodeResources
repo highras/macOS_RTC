@@ -6,7 +6,7 @@
 	<dict>
 		<key>Resources/Info.plist</key>
 		<data>
-		qhGq4flw1x7EnCndOe8CN9mgylE=
+		T5Wp2rZZ1uArctpQKgVMzmZNQHE=
 		</data>
 		<key>Resources/LICENSE.txt</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Resources/default.metallib</key>
 		<data>
-		Ycc+C48oOtOdu2ej8iBOODZOcEs=
+		lLy+yIOa27lwJEIQYRVOEt6y6I4=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -320,22 +320,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			c/jO4oPShZijR3VvDWd8HJ0gEwY=
+			scrQrHW3BH8EgbTF4607z+7FGtg=
 			</data>
 			<key>hash2</key>
 			<data>
-			cN7cyo9XWdCr5Whha1pH0ibK8eFvi3bx/VQoVKccbDs=
+			seVJs0N/nWkuC88+ORskM/LaZpcbq1McOPQGoNJJoaw=
+			</data>
+		</dict>
+		<key>Headers/RTMClient+RealTimeP2PAudioInterface.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			NL8cq/jayUgZfmSWFZ9obuZeKO8=
+			</data>
+			<key>hash2</key>
+			<data>
+			zl3yFwzOzMhcFmK4pOADouIpXkUekswLJa+xhaEVS2A=
+			</data>
+		</dict>
+		<key>Headers/RTMClient+RealTimeP2PVideoInterface.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lusbkg30HmFAc5rCZQnwnoLDIlc=
+			</data>
+			<key>hash2</key>
+			<data>
+			tFAs6wnTMY+Cb6LGnY6rPQKnLH1/wQB1udvOIE/jCqE=
 			</data>
 		</dict>
 		<key>Headers/RTMClient+RealTimeVideoInterface.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			IqbD4lSGYWJv30w2NyC6m/AbSxA=
+			CJS2yj4xidcvSo9KyF3BKdY71MU=
 			</data>
 			<key>hash2</key>
 			<data>
-			3/skTnVGEvc+sE1ih1Y3jbR10g9xQdxd2SF5JH3cK1k=
+			kGwBW0DwhIxXRbB2AeU11nm0efY/+pctLqsi1YioK2s=
 			</data>
 		</dict>
 		<key>Headers/RTMClient+Room.h</key>
@@ -386,11 +408,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TdBSeZ1sLWIqP07BHsdd7WMKRko=
+			edeuuCAM/PP+yfOms+EDDwn6SVE=
 			</data>
 			<key>hash2</key>
 			<data>
-			zfS5Iy+SbMgImHPm8HlNTwPP6RUuPJ/L0zYU+tMTdks=
+			iO1Dx1kfTbOYQRTkAujo8e7omM1fYBiWCNuha2XJefo=
 			</data>
 		</dict>
 		<key>Headers/RTMClientConfig.h</key>
@@ -727,11 +749,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uJUmrrFb89b0VM5K/73sWDt1oNY=
+			tkNwyDF2B5Enf2N/DpUorjo3ONM=
 			</data>
 			<key>hash2</key>
 			<data>
-			eDZzQLeVjt85i3jG7Y0zkfQU56vcjOYU7yXufeSj/uA=
+			3DQB46e+AQGWwa19KJM8bdWfStiWtg3ZgGfKCsJllWo=
 			</data>
 		</dict>
 		<key>Headers/RTMVideoRoomMemberCount.h</key>
@@ -793,11 +815,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kfBCv/M2zZflfHlyV0B156qSlkg=
+			ZnhP/2iH3oVpHoave46+QFxiono=
 			</data>
 			<key>hash2</key>
 			<data>
-			y1ZjqLLDvyQbS9HQOL577Wx7Ll0RB9iODK9IdRtwQ1k=
+			sLWfIlPYMEqWEBzX2jqVOa2y4K/lrUGDa25wNAYdINE=
 			</data>
 		</dict>
 		<key>Headers/RTMVoiceRoomMemberCount.h</key>
@@ -826,11 +848,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2gxCqHRp6JpOGdSOqSDAbkfYJ2k=
+			A0Ye7tTPDUJSxZNRmGiQc3W+Rjk=
 			</data>
 			<key>hash2</key>
 			<data>
-			CdZP4KlpPz0M5xt8GvgpT6y11zuSRr0TxABNTLaVZNQ=
+			oYK1sEgeD4K04idHsVgd4SST5HC0yBaGEprm7+NSwok=
 			</data>
 		</dict>
 		<key>Headers/RtmErrorLog.h</key>
@@ -859,11 +881,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qhGq4flw1x7EnCndOe8CN9mgylE=
+			T5Wp2rZZ1uArctpQKgVMzmZNQHE=
 			</data>
 			<key>hash2</key>
 			<data>
-			U6KwbOGUMO6v7E0OCRyIjNcEOkI9EsFnhp6yxNcRqrs=
+			XpmFwXj8ymcQ5wEIHaCCE0ImgCBt1Qi40kMlSym39HM=
 			</data>
 		</dict>
 		<key>Resources/LICENSE.txt</key>
@@ -881,11 +903,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ycc+C48oOtOdu2ej8iBOODZOcEs=
+			lLy+yIOa27lwJEIQYRVOEt6y6I4=
 			</data>
 			<key>hash2</key>
 			<data>
-			XeKqCu5dafyb0C1x/pK7jnAcgSgFcZCFmE7plbs883I=
+			ImgCNvZdhzxBzm3QVOsqeFhnabB/SIXh5+UKvFVkmio=
 			</data>
 		</dict>
 	</dict>

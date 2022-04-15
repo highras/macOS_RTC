@@ -15,13 +15,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef NS_ENUM(NSInteger, RTMCaptureVideoLevel){
-    
-    RTMCaptureVideoDefault = 1,
-    RTMCaptureVideoMiddle = 2,
-    RTMCaptureVideoHigh = 3,
-    
-};
+//typedef NS_ENUM(NSInteger, RTMCaptureVideoLevel){
+//    
+//    RTMCaptureVideoDefault = 1,
+//    RTMCaptureVideoMiddle = 2,
+//    RTMCaptureVideoHigh = 3,
+//    
+//};
 
 @interface RTMClient (RealTimeVideoInterface)
 
@@ -33,7 +33,7 @@ typedef NS_ENUM(NSInteger, RTMCaptureVideoLevel){
 -(void)updateChildrenPreviewFrame;
 
 //实时视频初始化
--(RTMBaseAnswer *)setVideoEngine:(RTMCaptureVideoLevel)captureVideoLevel;
+
 //实时视频反初始化
 -(void)videoClientDispose;
 //清晰度 默认 RTMRealTimeVideoDefault
@@ -57,11 +57,13 @@ typedef NS_ENUM(NSInteger, RTMCaptureVideoLevel){
 
 /// 创建房间
 /// @param roomId 房间id int64
+/// @param captureVideoLevel 采集等级
 /// @param enableRecord 是否开启录制
 /// @param timeout 请求超时时间 秒
 /// @param successCallback 成功回调
 /// @param failCallback 失败回调
 -(void)createVideoRoomWithId:(NSNumber * _Nonnull)roomId
+           captureVideoLevel:(RTMCaptureVideoLevel)captureVideoLevel
                 enableRecord:(BOOL)enableRecord
                      timeout:(int)timeout
                      success:(void(^)(RTMVideoCreateRoomAnswer * answer))successCallback
@@ -70,10 +72,12 @@ typedef NS_ENUM(NSInteger, RTMCaptureVideoLevel){
 
 /// 加入视频房间
 /// @param roomId 房间id int64
+/// @param captureVideoLevel 采集等级
 /// @param timeout 请求超时时间 秒
 /// @param successCallback 成功回调
 /// @param failCallback 失败回调
 -(void)enterVideoRoomWithRoomId:(NSNumber * _Nonnull)roomId
+              captureVideoLevel:(RTMCaptureVideoLevel)captureVideoLevel
                         timeout:(int)timeout
                         success:(void(^)(RTMVideoEnterRoomAnswer * answer))successCallback
                            fail:(RTMAnswerFailCallBack)failCallback;
@@ -208,3 +212,4 @@ typedef NS_ENUM(NSInteger, RTMCaptureVideoLevel){
 @end
 
 NS_ASSUME_NONNULL_END
+

@@ -16,6 +16,15 @@
 #import "RTMVideoProtocol.h"
 NS_ASSUME_NONNULL_BEGIN
 
+
+typedef NS_ENUM(NSInteger, RTMCaptureVideoLevel){
+    
+    RTMCaptureVideoDefault = 1,
+    RTMCaptureVideoMiddle = 2,
+    RTMCaptureVideoHigh = 3,
+    
+};
+
 typedef NS_ENUM(NSInteger, RTMClientConnectStatus){
     
     RTMClientConnectStatusConnectClosed = 0,
@@ -34,8 +43,7 @@ typedef void (^RTMLoginFailCallBack)(FPNError * _Nullable error);
                                    projectId:(int64_t)projectId
                                       userId:(int64_t)userId
                                     delegate:(id <RTMProtocol>)delegate
-                                      config:(nullable RTMClientConfig *)config
-                                 autoRelogin:(BOOL)autoRelogin;
+                                      config:(nullable RTMClientConfig *)config;
 
 
 - (void)loginWithToken:(nonnull NSString *)token

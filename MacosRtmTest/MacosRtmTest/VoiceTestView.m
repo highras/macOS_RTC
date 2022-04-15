@@ -33,17 +33,11 @@
                                        projectId:0
                                           userId:222
                                         delegate:self
-                                          config:nil
-                                     autoRelogin:YES];
+                                          config:nil];
     self.client.voiceDelegate = self;
     self.client.rtcEndpoint = @"rtc_Endpoint";
        
     [self _login];
-    
-    NSButton * initVoiceEngine = [NSButton buttonWithTitle:@"1.初始化(等待提示登陆成功后)点击" target:self action:@selector(initVoiceEngine)];
-    initVoiceEngine.frame = CGRectMake(250, 500, 150, 150);
-    [self addSubview:initVoiceEngine];
-    
     
     NSButton * createVoiceRoom = [NSButton buttonWithTitle:@"2.创建房间" target:self action:@selector(createVoiceRoom)];
     createVoiceRoom.frame = CGRectMake(250, 350, 150, 150);
@@ -108,37 +102,6 @@
     
     NSLog(@"rtmReloginWillStart  reloginCount = %d  uid = %lld   %@",reloginCount,client.userId,client);
     return YES;
-}
--(void)initVoiceEngine{
-    
-    if ([self.client setAudioEngineWithDualChannel:NO].error == nil) {
-        NSLog(@"音频初始化成功");
-        dispatch_async(dispatch_get_main_queue(), ^{
-           
-            NSAlert *alert = [[NSAlert alloc] init];
-            alert.alertStyle = NSAlertStyleWarning;
-            [alert addButtonWithTitle:@"确定"];
-            alert.informativeText = @"音频初始化成功";
-            [alert beginSheetModalForWindow:[NSApplication sharedApplication].keyWindow  completionHandler:^(NSModalResponse returnCode) {
-                
-            }];
-             
-        });
-    }else{
-        NSLog(@"音频初始化失败");
-        dispatch_async(dispatch_get_main_queue(), ^{
-           
-            NSAlert *alert = [[NSAlert alloc] init];
-            alert.alertStyle = NSAlertStyleWarning;
-            [alert addButtonWithTitle:@"确定"];
-            alert.informativeText = @"音频初始化失败";
-            [alert beginSheetModalForWindow:[NSApplication sharedApplication].keyWindow  completionHandler:^(NSModalResponse returnCode) {
-                
-            }];
-             
-        });
-    }
-        
 }
 -(void)createVoiceRoom{
     

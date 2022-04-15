@@ -30,9 +30,11 @@
 
 
 #import <Rtm/RTMClient+RealTimeAudioInterface.h>
+#import <Rtm/RTMClient+RealTimeP2PAudioInterface.h>
 
 //
 #import <Rtm/RTMClient+RealTimeVideoInterface.h>
+#import <Rtm/RTMClient+RealTimeP2PVideoInterface.h>
 #import <Rtm/RTMVideoProtocol.h>
 
 

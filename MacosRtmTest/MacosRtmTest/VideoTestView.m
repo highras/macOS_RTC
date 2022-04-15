@@ -34,15 +34,12 @@
                                           userId:222
                                         delegate:self
                                           config:nil
-                                     autoRelogin:YES];
+                                     ];
     self.client.videoDelegate = self;
     self.client.rtcEndpoint = @"rtc_Endpoint";
        
     [self _login];
             
-    NSButton * initVideoEngine = [NSButton buttonWithTitle:@"1.初始化(等待提示登陆成功后)点击" target:self action:@selector(initVideoEngine)];
-    initVideoEngine.frame = CGRectMake(250, 600, 150, 150);
-    [self addSubview:initVideoEngine];
     
     
     NSButton * createVideoRoom = [NSButton buttonWithTitle:@"2.创建房间" target:self action:@selector(createVideoRoom)];
@@ -112,44 +109,10 @@
     NSLog(@"rtmReloginWillStart  reloginCount = %d  uid = %lld   %@",reloginCount,client.userId,client);
     return YES;
 }
--(void)initVideoEngine{
-    
-    RTMBaseAnswer * an = [self.client setVideoEngine:RTMCaptureVideoDefault];
-    if (an.error == nil) {
-        
-        dispatch_async(dispatch_get_main_queue(), ^{
-           
-            NSAlert *alert = [[NSAlert alloc] init];
-            alert.alertStyle = NSAlertStyleWarning;
-            [alert addButtonWithTitle:@"确定"];
-            alert.informativeText = @"视频初始化成功";
-            [alert beginSheetModalForWindow:[NSApplication sharedApplication].keyWindow  completionHandler:^(NSModalResponse returnCode) {
-                
-            }];
-             
-        });
-        
-    }else{
-        
-        dispatch_async(dispatch_get_main_queue(), ^{
-           
-            NSAlert *alert = [[NSAlert alloc] init];
-            alert.alertStyle = NSAlertStyleWarning;
-            [alert addButtonWithTitle:@"确定"];
-            alert.informativeText = [NSString stringWithFormat:@"音频初始化失败  %@",an.error.ex];
-            [alert beginSheetModalForWindow:[NSApplication sharedApplication].keyWindow  completionHandler:^(NSModalResponse returnCode) {
-                
-            }];
-             
-        });
-    }
-        
-        
-}
 -(void)createVideoRoom{
     
     
-    [self.client createVideoRoomWithId:@(222) enableRecord:NO timeout:10 success:^(RTMVideoCreateRoomAnswer * _Nonnull answer) {
+    [self.client createVideoRoomWithId:@(222) captureVideoLevel:RTMCaptureVideoDefault enableRecord:NO timeout:10 success:^(RTMVideoCreateRoomAnswer * _Nonnull answer) {
         NSLog(@"createVideoRoom 创建成功");
         dispatch_async(dispatch_get_main_queue(), ^{
            
@@ -182,6 +145,7 @@
 -(void)joinVideoRoom{
     
     [self.client enterVideoRoomWithRoomId:@(222)
+                        captureVideoLevel:RTMCaptureVideoDefault
                                   timeout:10
                                   success:^(RTMVideoEnterRoomAnswer * _Nonnull answer) {
         
